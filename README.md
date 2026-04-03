@@ -1,4 +1,3 @@
-<img width="983" height="489" alt="image" src="https://github.com/user-attachments/assets/2d7080a4-34ce-44cb-bcbd-63634c1e4f11" /># SmartStock-csvgrep
 Simple solution to a University task that involved the creation of a command line tool that will allow salespeople to quickly generate summaries of smartphone stock as listed in large .csv files. When your script is run, the user is to provide the required input data as command line arguments only. The user is not to be prompted for input.
 
 It is intended to be compatible with CSV documents in the format below:
