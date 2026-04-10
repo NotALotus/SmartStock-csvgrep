@@ -1,4 +1,5 @@
 #!/bin/bash
+VERSION="1.0.0"
 BLUE='\033[0;34m' #Define the colour blue
 NC='\033[0m' #Define no colour - when applying colour to any text it must be reset to no colour by the end of the line to ensure other strings of text do not accidentally change colour
 RAM=$1 #The first argument inputted will be taken as the minimum RAM required by the user.
@@ -10,6 +11,7 @@ rows=() #This is used later to store all the models that meet the requirements o
 declare -A brands #Create an array to store the brands #I used declare for the brands as I will need to count how many suitable devices each brand has
 #The following if Statements are designed to check if the user is appropriately using the program by examing the arguments they provided and then providing help on how to resolve errors.
 if (( $# != 3 )); then #Uses the default variable $# to identify how many arguments were inputted and then returns an error if there are not exactly 3
+    echo "Version number: $VERSION"
     echo "There are not enough arguments provided for the script to run properly"
     echo "Please ensure there are 3 arguments in the order Mimimum_RAM (GB), Minimum Storage (GB), and then the source csv"
     echo "For example: ./filter.sh 16 128 source.csv" #provides an example to the user if the make a mistake
